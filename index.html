@@ -37,7 +37,7 @@
 
 <body>
     <div class="container todo-list">
-        <h1>Max</h1>
+        <h1 class="text-center">Max</h1>
         <div class="input-group">
             <input type="text" id="todo-input" class="form-control" placeholder="Add new task">
             <button id="add-btn" class="btn btn-primary">Add</button>
@@ -77,8 +77,8 @@
                 if (task !== '') {
                     var taskHtml = '<li class="todo-item">' + 
                         '<span>' + task.trim() + '</span>' + 
-                        '<div class="btn-group">' + 
-                            '<button class="up-btn btn btn-sm btn-primary">Up</button>' + 
+                        '<div class="">' + 
+                            '<button class="up-btn btn btn-sm btn-primary mx-1">Up</button>' + 
                             '<button class="delete-btn btn btn-sm btn-danger">Delete</button>' + 
                         '</div>' + 
                     '</li>';
@@ -122,8 +122,8 @@
                     $.each(storedTasks, function(index, task) {
                         var taskHtml = '<li class="todo-item">' + 
                             '<span>' + task.trim() + '</span>' + 
-                            '<div class="btn-group">' + 
-                                '<button class="up-btn btn btn-sm btn-primary">Up</button>' + 
+                            '<div class="">' + 
+                                '<button class="up-btn btn btn-sm btn-primary mx-1">Up</button>' + 
                                 '<button class="delete-btn btn btn-sm btn-danger">Delete</button>' + 
                             '</div>' + 
                         '</li>';
